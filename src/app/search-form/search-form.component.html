@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <h5 class="text-center">Search Username</h5>
+
+    <form #name="ngForm">
+        <div class="form-group ">
+            <label for="username">Username</label>
+            <input type="text" class="form-control"  [(ngModel)]="searchTerm" name="searchTerm"  placeholder="Enter github username" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="searh user" (click)="searchUser()">
+        </div>
+    </form>
+</div>

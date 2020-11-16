@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { Profile } from './profile';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { Profile } from './profile';
 export class ProfileService {
 
 
- profile: Profile;
+ user: User;
 
   constructor( private http: HttpClient) {
     

@@ -1,6 +1,5 @@
 export class Repository {
-    constructor(public repository: any,public description: string){
-        
-    }
+    constructor(public name: string, public description : string,){}
 }
+
 

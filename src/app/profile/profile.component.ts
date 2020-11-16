@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from '../profile';
+import { User } from '../user';
 import { HttpClient } from '@angular/common/http';
 import { ProfileService  } from '../profile.service';
 
@@ -11,7 +11,7 @@ import { ProfileService  } from '../profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  profile : Profile;
+  user : User;
 
   constructor(profileService:ProfileService, private http : HttpClient) {
     
