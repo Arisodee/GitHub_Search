@@ -8,6 +8,7 @@ h3{
     color: blue;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .email{
@@ -17,8 +18,20 @@ h3{
 
 h5{
     font-size: 18px;
+    font-weight: bold;
 }
 
-/* .bioData{
-    
-} */
+.card-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+.bioData{
+    margin-top: 20px;
+}
+.intro{
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}

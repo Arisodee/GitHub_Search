@@ -8,6 +8,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { FormsModule } from '@angular/forms';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     SearchFormComponent,
     ProfileComponent,
     DateAgoPipe,
-    HighlightDirective
+    HighlightDirective,
+    NavbarComponent
 
   ],
 
