@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit {
 
   searchUser(user) {
 
-    this.profileService.searchUser(user).then((succes) => {
+    this.profileService.searchUser(user).then((done) => {
       this.userProfile = this.profileService.userProfile;
     },
       (error) => {
@@ -28,7 +28,7 @@ export class ProfileComponent implements OnInit {
       }
     )
 
-    this.profileService.displayRepos(user).then((succes) => {
+    this.profileService.displayRepos(user).then((done) => {
       this.userRepo = this.profileService.userRepo;
     },
       (error) => {
