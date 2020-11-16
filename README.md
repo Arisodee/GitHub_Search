@@ -5,7 +5,7 @@ This application allows users to search for github profiles using the username a
 Ariso Okanga
 
 ## Project Image
-![GitHub_Search](../assets/images/landingpage.png)
+![GitHub_Search](src/assets/images/landingpage.png)
 
 
 ## Live Link 
