@@ -11,8 +11,9 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
     SearchFormComponent,
+    ProfileComponent
+
   ],
 
   imports: [

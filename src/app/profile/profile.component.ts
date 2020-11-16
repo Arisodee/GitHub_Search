@@ -1,23 +1,76 @@
-import { Component, OnInit } from '@angular/core';
-import { User } from '../user';
+import { Injectable } from '@angular/core';
+
 import { HttpClient } from '@angular/common/http';
-import { ProfileService  } from '../profile.service';
 
 
-@Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+import { User } from '../user';
+import { Repository } from '../repository';
+import { environment } from 'src/environments/environment';
+
+@Injectable({
+  providedIn: 'root'
 })
-export class ProfileComponent implements OnInit {
+export class ProfileService {
 
-  user : User;
+  userProfile: User
 
-  constructor(profileService:ProfileService, private http : HttpClient) {
-    
+  userRepo: Repository
+
+  // apiUrl = environment.API_URL;
+  // apiKey = environment.API_KEY;
+
+  constructor(private http: HttpClient) {
+    this.userProfile = new User('', '', 0, '', '' );
+
   }
 
-  ngOnInit() {
+  searchUser(user) {
+    interface Responsee {
+      login: string,
+      avatar_url: string,
+      followers: number,
+      public_repos: string,
+      html_url : any
 
+    }
+
+    let mainUrl = environment.API_URL + user + '?access_token=' + environment.API_KEY;
+    let promise = new Promise((resolve, reject) => {
+      this.http.get<Responsee>(mainUrl).toPromise().then(res => {
+        this.userProfile = res;
+        //console.log(res);
+        resolve()
+
+      }, error => {
+        reject();
+      })
+
+    });
+    return promise
   }
+
+  displayRepos(user) {
+    interface apiResponse {
+      name: string,
+      description: string,
+      
+
+    }
+
+    let repoUrl = environment.API_URL + user + '/repos' + '?access_token=' + environment.API_KEY;
+    let promise = new Promise((resolve, reject) => {
+      this.http.get<apiResponse>(repoUrl).toPromise().then(response => {
+        this.userRepo = response;
+        resolve()
+
+      }, error => {
+        reject();
+      })
+
+    });
+    return promise
+  }
+
+
 }
+
