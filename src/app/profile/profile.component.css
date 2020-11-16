@@ -1,3 +1,24 @@
 img {
     border-radius: 50%;
+    height: 300px;
+    width: 300px;
   }
+
+h3{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.email{
+    color: blue;
+    text-decoration: underline;
+}
+
+h5{
+    font-size: 18px;
+}
+
+/* .bioData{
+    
+} */
