@@ -1,37 +1,29 @@
 <div class="container">
     <app-search-form (searchProf)="searchUser($event)"></app-search-form>
-    <div class="row">
-      <div class="col-sm">
-        <div class="testimonial-card">
-          <div class="avatar pt-3" style="z-index: 4">
-            <img
+    <div>
+      <img
               src="{{ userProfile.avatar_url }}"
-              class="width-full border bg-white" style="border-radius: 23em;"
-              alt="woman avatar"
-              style="height: auto"
-              alt
-              width="260"
-              height="260"
+            
+              alt="avatar"
+              
             />
-          </div>
-        </div>
-      </div>
-      <div>
-          <h4>{{ userProfile.login }}</h4>
-                  {{ userProfile.followers }}
-                  <p>followers</p>
-      </div>
+    </div>
+         
+    <div>
+        <h4>Username : {{ userProfile.login }}</h4>
+        <p>Followers : {{ userProfile.followers }}</p>
+        <p>Email Address : {{userProfile.email}}</p>
+    </div>
      
   
     <h3 class="text-center">Repositories</h3>
   
-    <div class="row" *ngFor="let repo of userRepo">
-      <div class="col pt-3">
-        <div class="card card-cascade wider reverse mt-3 repo">
-          <div class="card-body card-body-cascade text-center" appOnHover>
-            <h4 class="card-title">
-              <strong>{{ repo.name }}</strong>
-            </h4>
+    <div *ngFor="let repo of userRepo">
+      
+        <div class="card">
+          <h4 class="card-title">
+            <strong>{{ repo.name }}</strong>
+          </h4>
             <p class="">{{ repo.description }}</p>
             <p>created {{ repo.created_at|dateAgo}}</p>
             <button type="button" class="btn btn-primary">
@@ -39,9 +31,7 @@
                 >View Project
               </a>
             </button>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
   
