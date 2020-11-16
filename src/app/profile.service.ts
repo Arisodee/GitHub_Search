@@ -14,7 +14,7 @@ export class ProfileService {
   userRepo: Repository
 
   constructor(private http: HttpClient) {
-    this.userProfile = new User('', '', 0, '', '', '' );
+    this.userProfile = new User('', '', 0, 0, '', '', '' );
 
   }
 
@@ -23,9 +23,11 @@ export class ProfileService {
       login: string,
       avatar_url: string,
       followers: number,
+      following: number,
       public_repos: string,
       html_url : any,
       email :any
+
 
 
     }
