@@ -4,12 +4,8 @@ This application allows users to search for github profiles using the username a
 ### Author
 Ariso Okanga
 
-## Project Image
-![GitHub_Search](src/assets/images/landingpage.png)
-
-
 ## Live Link 
-https://github.com/Arisodee/GitHub_Search
+https://arisodee.github.io/GitHub_Search/
 
 ## User
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
