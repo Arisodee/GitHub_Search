@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { FormsModule } from '@angular/forms';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { DateAgoPipe } from './pipes/date-ago.pipe';
     AppComponent,
     SearchFormComponent,
     ProfileComponent,
-    DateAgoPipe
+    DateAgoPipe,
+    HighlightDirective
 
   ],
 
