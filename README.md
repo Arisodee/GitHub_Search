@@ -1,8 +1,12 @@
-# Quotes
+# GitHub_Search
 This application allows users to search for github profiles using the username and view their public repositories. The users can also search for repositories
 
 ### Author
 Ariso Okanga
+
+## Project Image
+![GitHub_Search](../assets/images/landingpage.png)
+
 
 ## Live Link 
 https://github.com/Arisodee/GitHub_Search
