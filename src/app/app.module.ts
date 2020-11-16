@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ProfileComponent,
     DateAgoPipe,
     HighlightDirective,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
 
   ],
 
