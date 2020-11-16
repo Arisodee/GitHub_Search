@@ -33,7 +33,7 @@
               <strong>{{ repo.name }}</strong>
             </h4>
             <p class="">{{ repo.description }}</p>
-            
+            <p>created {{ repo.created_at|dateAgo}}</p>
             <button type="button" class="btn btn-primary">
               <a target="_blank" class="text-white" href="{{ repo.html_url }}"
                 >View Project

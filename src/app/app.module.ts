@@ -6,13 +6,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { FormsModule } from '@angular/forms';
+import { DateAgoPipe } from './pipes/date-ago.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormComponent,
-    ProfileComponent
+    ProfileComponent,
+    DateAgoPipe
 
   ],
 
