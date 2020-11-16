@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Repository } from '../repository';
+import { RepositoryService  } from '../repository.service';
 
 @Component({
   selector: 'app-repository',
@@ -9,7 +10,16 @@ import { Repository } from '../repository';
 export class RepositoryComponent implements OnInit {
   repository: Repository;
 
-  constructor() { }
+  gitHubRepos: any = [];
+  constructor(private repoService : RepositoryService) { 
+    this.getRepo();
+  }
+
+  getRepo(){
+    this.repoService.getRepositories().subscribe(repos =>{
+      this.gitHubRepos = repos;
+    })
+  }
 
   ngOnInit(): void {
   }

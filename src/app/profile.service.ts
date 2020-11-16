@@ -12,7 +12,7 @@ export class ProfileService {
  profile: Profile;
 
   constructor( private http: HttpClient) {
-    this.profile = new Profile ("", "")
+    
    }
 
 }
