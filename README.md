@@ -4,6 +4,9 @@ This application allows users to search for github profiles using the username a
 ### Author
 Ariso Okanga
 
+## Project Image
+![GitHub-search](src/assets/images/landingpage.png)
+
 ## Live Link 
 https://arisodee.github.io/GitHub_Search/
 
